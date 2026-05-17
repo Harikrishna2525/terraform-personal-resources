@@ -1,0 +1,20 @@
+# 1. Local state files (Sensitive & dynamic)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# 2. Local backend cache (Varies per machine)
+.terraform/
+.terraform.lock.hcl
+
+# 3. Variable files containing real secrets
+*.tfvars
+*.tfvars.json
+
+# 4. Local CLI override configurations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
